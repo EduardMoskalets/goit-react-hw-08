@@ -3,9 +3,8 @@ import { FaUser, FaPhoneAlt } from 'react-icons/fa';
 import { RiDeleteBinLine, RiEdit2Line } from 'react-icons/ri';
 
 import { useDispatch } from 'react-redux';
-// import { selectIsEditingContact } from '../../redux/contacts/selectors';
 import { openModal } from '../../redux/modal/slice';
-// import EditForm from '../EditForm/EditForm';
+
 
 import css from './Contact.module.css';
 
@@ -17,15 +16,7 @@ export default function Contact({ contact, onEdit }) {
   const handleEdit = () => {
     onEdit(contact);
   };
-  // const handleEdit = contact => {
-  //   setCurrentContact(contact);
-  //   isEditingContact(true);
-  // };
-
-  // const handleClose = () => {
-  //   isEditingContact(false);
-  //   setCurrentContact(null);
-  // };
+  
 
   return (
     <div className={css.container}>

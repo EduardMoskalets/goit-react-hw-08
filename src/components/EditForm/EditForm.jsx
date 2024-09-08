@@ -1,12 +1,11 @@
 import { useId } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-// import css from '../ContactForm/ContactForm.module.css';
 import css from '../EditForm/EditForm.module.css';
 import { useDispatch } from 'react-redux';
 import { updateContact } from '../../redux/contacts/operations';
 import toast from 'react-hot-toast';
-// import { selectCurrentContact } from '../../redux/contacts/selectors';
+
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
